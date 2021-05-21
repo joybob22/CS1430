@@ -1,0 +1,62 @@
+#homeContainer {
+  height: calc(100vh - 65px);
+  width: 100%;
+  background-image: url(../img/pexels-cottonbro-3944309.jpg);
+  background-position: center;
+  background-size: cover;
+  color: white;
+  background-attachment: fixed;
+}
+
+#overlay {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#bigHeaderCon {
+  display: flex;
+  align-items: center;
+}
+
+#headerCon {
+  border-right: 1px solid white;
+  font-size: 50px;
+  padding: 20px 20px 20px 0;
+  margin-right: 20px;
+}
+
+h1 {
+  font-weight: 100;
+}
+
+#bigHeaderCon p {
+  font-size: 25px;
+  font-family: "Raleway";
+  font-weight: bold;
+}
+
+#wordsContainer {
+  display: flex;
+  justify-content: center;
+}
+
+#wordsContainer p {
+  font-size: 40px;
+  padding: 100px 0;
+  width: 700px;
+  line-height: 75px;
+  font-weight: 100;
+}
+
+#wordsContainer a {
+  color: #c62828;
+  transition: all 0.2s;
+}
+
+#wordsContainer a:hover {
+  color: #ff5f52;
+}

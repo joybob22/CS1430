@@ -1,0 +1,28 @@
+#contactContainer {
+  width: 100%;
+  height: calc(100vh - 65px);
+  background-image: url(../img/pexels-quang-nguyen-vinh-2159074.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+#overlay {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  box-shadow: none;
+}
+
+input {
+  width: 420px;
+}
+
+#submitButtons input {
+  width: 200px;
+}

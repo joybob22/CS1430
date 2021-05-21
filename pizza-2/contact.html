@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/order.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+    <div id="nav">
+        <div id="logo">
+            My Pizza
+        </div>
+        <div>
+            <a href="./index.html">Home</a>
+            <a href="./contact.html">Contact</a>
+            <a href="./about.html">About</a>
+            <a href="./order.html">Order</a>
+        </div>
+    </div>
+    <div id="contactContainer">
+        <div id="overlay">
+            <form action="https://www.stonecoldprofessor.com/pizza-contact.php" method="POST">
+                <h1>Contact Me</h1>
+                <div>
+                    <input type="text" placeholder="First Name" name="first-name" id="firstName" />
+                </div>
+                <div>
+                    <input type="text" placeholder="Last Name" name="last-name" id="lastName" />
+                </div>
+                <div>
+                    <input type="email" placeholder="Email" name="email" id="email" />
+                </div>
+                <div>
+                    <input type="text" placeholder="Message" name="message" id="message" />
+                </div>
+                <div id="submitButtons">
+                    <input type="submit" value="Send" />
+                    <input type="reset" value="Clear" />
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

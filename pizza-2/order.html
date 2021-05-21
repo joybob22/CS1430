@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/order.css">
+</head>
+<body>
+    <div id="nav">
+        <div id="logo">
+            My Pizza
+        </div>
+        <div>
+            <a href="./index.html">Home</a>
+            <a href="./contact.html">Contact</a>
+            <a href="./about.html">About</a>
+            <a href="./order.html">Order</a>
+        </div>
+    </div>
+    <div id="contentContainer">
+        <div id="leftPic"></div>
+        <div id="rightForm">
+            <form action="https://www.stonecoldprofessor.com/pizza-order.php" method="POST">
+                <h1>Order My Pizza</h1>
+                <div class="formRow">
+                    <input required type="text" placeholder="First Name" name="first" />
+                    <input required type="text" placeholder="Last Name" name="last" />
+                </div>
+                <div class="formRow">
+                    <input required type="email" placeholder="Email" name="email" />
+                    <input required type="text" placeholder="Phone Number" name="phone" />
+                </div>
+                <div class="formRow">
+                    <input required type="text" placeholder="Address 1" name="add1" />
+                    <input required type="text" placeholder="Address 2 (opt)" name="add2" />
+                </div>
+                <div class="formRow" id="customFormRow">
+                    <input required type="text" placeholder="City" name="city" />
+                    <div class="custom-select">
+                        <select name="state" id="state">
+                            <option value="" selected="selected">Select a State</option>
+                            <option value="AL">Alabama</option>
+                            <option value="AK">Alaska</option>
+                            <option value="AZ">Arizona</option>
+                            <option value="AR">Arkansas</option>
+                            <option value="CA">California</option>
+                            <option value="CO">Colorado</option>
+                            <option value="CT">Connecticut</option>
+                            <option value="DE">Delaware</option>
+                            <option value="DC">District Of Columbia</option>
+                            <option value="FL">Florida</option>
+                            <option value="GA">Georgia</option>
+                            <option value="HI">Hawaii</option>
+                            <option value="ID">Idaho</option>
+                            <option value="IL">Illinois</option>
+                            <option value="IN">Indiana</option>
+                            <option value="IA">Iowa</option>
+                            <option value="KS">Kansas</option>
+                            <option value="KY">Kentucky</option>
+                            <option value="LA">Louisiana</option>
+                            <option value="ME">Maine</option>
+                            <option value="MD">Maryland</option>
+                            <option value="MA">Massachusetts</option>
+                            <option value="MI">Michigan</option>
+                            <option value="MN">Minnesota</option>
+                            <option value="MS">Mississippi</option>
+                            <option value="MO">Missouri</option>
+                            <option value="MT">Montana</option>
+                            <option value="NE">Nebraska</option>
+                            <option value="NV">Nevada</option>
+                            <option value="NH">New Hampshire</option>
+                            <option value="NJ">New Jersey</option>
+                            <option value="NM">New Mexico</option>
+                            <option value="NY">New York</option>
+                            <option value="NC">North Carolina</option>
+                            <option value="ND">North Dakota</option>
+                            <option value="OH">Ohio</option>
+                            <option value="OK">Oklahoma</option>
+                            <option value="OR">Oregon</option>
+                            <option value="PA">Pennsylvania</option>
+                            <option value="RI">Rhode Island</option>
+                            <option value="SC">South Carolina</option>
+                            <option value="SD">South Dakota</option>
+                            <option value="TN">Tennessee</option>
+                            <option value="TX">Texas</option>
+                            <option value="UT">Utah</option>
+                            <option value="VT">Vermont</option>
+                            <option value="VA">Virginia</option>
+                            <option value="WA">Washington</option>
+                            <option value="WV">West Virginia</option>
+                            <option value="WI">Wisconsin</option>
+                            <option value="WY">Wyoming</option>
+                        </select>
+                    </div>
+                </div>
+                <p>Pizza Size:</p>
+                <div id="pizzaSize">
+                    <label class="container">Lunchable
+                        <input type="radio" value="Lunchable" name="crust">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Slice
+                        <input type="radio" value="slice" name="crust">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Tiny
+                        <input type="radio" value="Tiny" name="crust">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Snack
+                        <input type="radio" value="Snack" name="crust">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Sm
+                        <input type="radio" value="sm" name="crust">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Med
+                        <input type="radio" value="med" name="crust">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Lg
+                        <input type="radio" value="lg" name="crust" checked="checked">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Family
+                        <input type="radio" value="family" name="crust">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">2 Family
+                        <input type="radio" value="2 Family" name="crust">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Thanksgiving
+                        <input type="radio" value="Thanksgiving" name="crust">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div id="crustChoice" class="custom-select">
+                    <select name="crust">
+                        <option value="">Select Crust</option>
+                        <option value="Normal">Normal</option>
+                        <option value="Thick">Thick</option>
+                        <option value="Thin">Thin</option>
+                        <option value="Pan">Pan</option>
+                        <option value="No Crust">No Crust</option>
+                        <option value="Keto">Keto</option>
+                        <option value="Vegan">Vegan</option>
+                        <option value="Meat">Meat</option>
+                        <option value="Cheese">Cheese</option>
+                    </select>
+                </div>
+                <p>Toppings:</p>
+                <div id="toppingsContainer">
+                    <label class="container">Cheese
+                        <input name="toppings[]" value="Cheese" type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <label class="container">Pepperoni
+                        <input name="toppings[]" value="Pepperoni" type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <label class="container">Sausage
+                        <input name="toppings[]" value="Sausage" type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <label class="container">Bell Peppers
+                        <input name="toppings[]" value="Bell Peppers" type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Onions
+                        <input name="toppings[]" value="Onions" type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <label class="container">Chicken
+                        <input name="toppings[]" value="Chicken" type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <label class="container">Spinach
+                        <input name="toppings[]" value="Spinach" type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <label class="container">BBQ Sauce
+                        <input name="toppings[]" value="BBQ Sauce" type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <label class="container">Artichokes
+                        <input name="toppings[]" value="Artichokes" type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <label class="container">Pineapple
+                        <input name="toppings[]" value="Pineapple" type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <label class="container">Ham
+                        <input name="toppings[]" value="Ham" type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <label class="container">Bacon
+                        <input name="toppings[]" value="Bacon" type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <label class="container">Alfredo Sauce
+                        <input name="toppings[]" value="Alfredo Sauce" type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <label class="container">Olives
+                        <input name="toppings[]" value="Olives" type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <label class="container">Lime
+                        <input name="toppings[]" value="Lime" type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <label class="container">Feta
+                        <input name="toppings[]" value="Feta" type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <label class="container">Parmesian
+                        <input name="toppings[]" value="Parmesian" type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <label class="container">Mushrooms
+                        <input name="toppings[]" value="Mushrooms" type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <label class="container">Jalepnos
+                        <input name="toppings[]" value="Jalepnos" type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <label class="container">Italian Seasoning
+                        <input name="toppings[]" value="Italion Seasoning" type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <label class="container">Red Pepper Flakes
+                        <input name="toppings[]" value="Red Pepper Flakes" type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <label class="container">Tomato
+                        <input name="toppings[]" value="Tomato" type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <label class="container">Beef
+                        <input name="toppings[]" value="Beef" type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <label class="container">Ranch
+                        <input name="toppings[]" value="Ranch" type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <textarea name="comments" placeholder="Message/Comment"></textarea>
+                <div id="submitButtons">
+                    <input type="submit" />
+                    <input type="reset" />
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="js/form.js"></script>
+</body>
+</html>

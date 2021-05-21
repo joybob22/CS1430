@@ -1,0 +1,67 @@
+#header {
+  height: 70vh;
+  width: 100%;
+  background-image: url(../img/pexels-cottonbro-4252146.jpg);
+  background-position: bottom;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#overlay {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: white;
+  font-size: 120px;
+  font-weight: 100;
+}
+
+.row {
+  height: 60vh;
+  width: 100%;
+  display: flex;
+}
+
+.img {
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 40%;
+}
+
+.words {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+h2 {
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+p {
+  font-family: "Roboto";
+  font-size: 23px;
+  padding: 0;
+}
+
+.row a {
+  color: #c62828;
+  transition: all 0.2s;
+  padding: 0;
+  margin: 0;
+}
+
+.row a:hover {
+  color: #ff5f52;
+}
