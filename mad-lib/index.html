@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MadLib</title>
+    <link rel="stylesheet" href="main.css" />
+</head>
+<body>
+    <h1>Mad Libs</h1>
+    <div id="cardsContainer">
+        <div id="initialState">
+            <h2>Choose a story</h2>
+            <div id="optionButtons">
+                <div id="Option1" class="button">Vacations</div>
+                <div id="Option2" class="button">How to Study</div>
+            </div>
+        </div>
+        <div id="form1" class="form noDisplay">
+            <h2>Fill In - Vacations</h2>
+            <div class="row">
+                <label for="adj1">Adjective 1:</label>
+                <input type="text" id="adj1" />
+            </div>
+            <div class="row">
+                <label for="adj2">Adjective 2:</label>
+                <input type="text" id="adj2" />
+            </div>
+            <div class="row">
+                <label for="noun1">Noun 1:</label>
+                <input type="text" id="noun1" />
+            </div>
+            <div class="row">
+                <label for="noun2">Noun 2:</label>
+                <input type="text" id="noun2" />
+            </div>
+            <div class="row">
+                <label for="plNoun1">Plural Noun 1:</label>
+                <input type="text" id="plNoun1" />
+            </div>
+            <div class="row">
+                <label for="game">Game:</label>
+                <input type="text" id="game" />
+            </div>
+            <div class="row">
+                <label for="plNoun2">Plural Noun 2:</label>
+                <input type="text" id="plNoun2" />
+            </div>
+            <div class="row">
+                <label for="verb1">Verb Ending in "ING": </label>
+                <input type="text" id="verb1" />
+            </div>
+            <div class="row">
+                <label for="verb2">Verb Ending in "ING": </label>
+                <input type="text" id="verb2" />
+            </div>
+            <div class="row">
+                <label for="verb3">Verb Ending in "ING": </label>
+                <input type="text" id="verb3" />
+            </div>
+            <div class="row">
+                <label for="verb4">Verb Ending in "ING": </label>
+                <input type="text" id="verb4" />
+            </div>
+            <div class="row">
+                <label for="plNoun3">Plural Noun 3:</label>
+                <input type="text" id="plNoun3" />
+            </div>
+            <div class="row">
+                <label for="noun3">Noun 3:</label>
+                <input type="text" id="noun3" />
+            </div>
+            <div class="row">
+                <label for="plant">Plant:</label>
+                <input type="text" id="plant" />
+            </div>
+            <div class="row">
+                <label for="body">Part of the body:</label>
+                <input type="text" id="body" />
+            </div>
+            <div class="row">
+                <label for="place">A place:</label>
+                <input type="text" id="place" />
+            </div>
+            <div class="row">
+                <label for="adj3">Adjective 3</label>
+                <input type="text" id="adj3" />
+            </div>
+            <div class="row">
+                <label for="num">Number:</label>
+                <input type="text" id="num" />
+            </div>
+            <div class="row">
+                <label for="plNoun4">Plural Noun 4:</label>
+                <input type="text" id="plNoun4" />
+            </div>
+            <div id="submitForm1" class="button">Create Story</div>
+        </div>
+        <div id="form2" class="form noDisplay">
+            <h2>Fill In - How to Study</h2>
+            <div class="row">
+                <label for="adj4">Adjective 1:</label>
+                <input type="text" id="adj4" />
+            </div>
+            <div class="row">
+                <label for="adj5">Adjective 2:</label>
+                <input type="text" id="adj5" />
+            </div>
+            <div class="row">
+                <label for="adj6">Adjective 3:</label>
+                <input type="text" id="adj6" />
+            </div>
+            <div class="row">
+                <label for="adj7">Adjective 4:</label>
+                <input type="text" id="adj7" />
+            </div>
+            <div class="row">
+                <label for="adj8">Adjective 5:</label>
+                <input type="text" id="adj8" />
+            </div>
+            <div class="row">
+                <label for="adj9">Adjective 6:</label>
+                <input type="text" id="adj9" />
+            </div>
+            <div class="row">
+                <label for="noun4">Noun 1:</label>
+                <input type="text" id="noun4" />
+            </div>
+            <div class="row">
+                <label for="noun5">Noun 2:</label>
+                <input type="text" id="noun5" />
+            </div>
+            <div class="row">
+                <label for="plNoun5">Plural Noun 1:</label>
+                <input type="text" id="plNoun5" />
+            </div>
+            <div class="row">
+                <label for="plNoun6">Plural Noun 2:</label>
+                <input type="text" id="plNoun6" />
+            </div>
+
+            <div class="row">
+                <label for="plNoun7">Plural Noun 3:</label>
+                <input type="text" id="plNoun7" />
+            </div>
+            <div class="row">
+                <label for="adverb">Adverb:</label>
+                <input type="text" id="adverb" />
+            </div>
+            <div class="row">
+                <label for="verb5">Verb </label>
+                <input type="text" id="verb5" />
+            </div>
+            <div class="row">
+                <label for="letter">Letter of the alphabet:</label>
+                <input type="text" id="letter" />
+            </div>
+            <div id="submitForm2" class="button">Create Story</div>
+        </div>
+        <div id="output" class="noDisplay"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>
