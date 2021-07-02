@@ -1,0 +1,148 @@
+@-webkit-keyframes backgroundFlow {
+  0% {
+    background-position: 0% 51%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 51%;
+  }
+}
+@-moz-keyframes backgroundFlow {
+  0% {
+    background-position: 0% 51%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 51%;
+  }
+}
+@keyframes backgroundFlow {
+  0% {
+    background-position: 0% 51%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 51%;
+  }
+}
+
+@keyframes fadeInHeader {
+  0% {
+    color: rgb(0, 0, 0, 0);
+  }
+  100% {
+    color: rgb(0, 0, 0, 0.4);
+  }
+}
+
+.nav-item {
+  color: white;
+  font-weight: 100;
+}
+
+.nav-item:hover {
+  color: white;
+  text-decoration: none;
+}
+
+#jumbotron,
+#quotesContainer {
+  height: calc(70vh - 50px);
+  background: linear-gradient(
+    319deg,
+    #518bce,
+    #b7d559,
+    #37c2c3,
+    /* #593e7f,
+    #8c477a,
+    #902d4f, */ #19765e,
+    #194876,
+    #539944
+  );
+  background-size: 1200% 1200%;
+
+  -webkit-animation: backgroundFlow 30s ease infinite;
+  -moz-animation: backgroundFlow 30s ease infinite;
+  animation: backgroundFlow 30s ease infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#jumboMid h1,
+#quote {
+  color: rgba(0, 0, 0, 0);
+  font-weight: 100;
+  animation: fadeInHeader 3s ease forwards;
+  font-size: 80px;
+}
+
+#jumboMid h3,
+#author {
+  color: rgba(0, 0, 0, 0);
+  animation: fadeInHeader 3s ease 2s forwards;
+}
+
+#projectsContainer {
+  width: 80%;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+h2 {
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+#cardsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#cardsContainer .card {
+  margin: 20px;
+}
+
+.card a {
+  text-decoration: none;
+  color: black;
+}
+
+#quotes {
+  border: 1px solid rgb(0, 0, 0, 0.4);
+  border-radius: 5px;
+  padding: 20px;
+  max-width: 500px;
+}
+
+#quote {
+  font-weight: 100;
+  font-size: 40px;
+  line-height: 45px;
+}
+
+#author {
+  text-align: right;
+  margin: 10px 0;
+}
+
+.quoteBtn {
+  color: rgb(0, 0, 0, 0.4);
+  border: 1px solid rgb(0, 0, 0, 0.4);
+  border-radius: 3px;
+  /* display: inline-block; */
+  text-align: center;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+.quoteBtn:hover {
+  cursor: pointer;
+}
